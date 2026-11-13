@@ -9,10 +9,10 @@ Wants=network-online.target
 [Service]
 Type=oneshot
 # Set both to the account that is logged in to gh, and the repo to your fork.
-User=rainval
-Environment=HOME=/home/rainval
-Environment=PR_DASHBOARD_REPO=rainsupreme/PR-Dashboard
-WorkingDirectory=/home/rainval
+User=Baraa-Hasheesh
+Environment=HOME=/home/Baraa-Hasheesh
+Environment=PR_DASHBOARD_REPO=Baraa-Hasheesh/PersonalDashboard
+WorkingDirectory=/home/Baraa-Hasheesh
 ExecStart=/bin/bash -c 'exec "$HOME/.local/bin/gh" workflow run update.yml -R "$PR_DASHBOARD_REPO"'
 TimeoutStartSec=60
 StandardOutput=journal

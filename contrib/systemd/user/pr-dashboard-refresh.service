@@ -7,6 +7,6 @@ Wants=network-online.target
 [Service]
 Type=oneshot
 # Set to your fork. Everything else happens in GitHub Actions.
-Environment=PR_DASHBOARD_REPO=rainsupreme/PR-Dashboard
+Environment=PR_DASHBOARD_REPO=Baraa-Hasheesh/PersonalDashboard
 ExecStart=%h/.local/bin/gh workflow run update.yml -R ${PR_DASHBOARD_REPO}
 TimeoutStartSec=60
